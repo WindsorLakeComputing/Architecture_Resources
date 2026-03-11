@@ -8,3 +8,7 @@ https://standards.ieee.org/ieee/42010/5334/
 
 The specification of architecture frameworks is one area of standardization in ISO/IEC/IEEE 42010:2011
 http://www.iso-architecture.org/42010/afs/frameworks-table.html
+
+Designing for the Digital Age: How to Create Human-Centered Products and Services
+An extensive excerpt from the chapter on stakeholder interviews:
+https://boxesandarrows.com/understanding-the-business/
