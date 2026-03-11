@@ -1,0 +1,94 @@
+"Answer ten important questions at the start of a new project to avoid common
+failures and align stakeholders. The inception deck most often takes the form
+of a slide deck or lightweight text document and is usually created early in a
+project’s life, during the inception phase. The version of the activity outlined
+here was described by Jonathan Rasmusson in The Agile Samurai: How Agile
+Masters Deliver Great Software [Ras10].
+
+Benefits
+• Put important information in the open.
+• Share easily with all stakeholders.
+• Ensure all stakeholders have a common understanding of important
+system concerns.
+• Discuss important information that should be covered at the start of a
+new project.
+
+Description
+Filling in the inception deck can take as little as 20 minutes when you have
+the required information handy. Finding the information needed for the deck
+could take days or weeks. The inception deck is highly customizable. Modify
+the questions presented here so that they work for your particular situation.
+To create an inception deck, answer these questions and record the answers
+in a slide deck, markdown file, or another format that can be easily shared
+with stakeholders.
+
+1. Why are we here?
+Simply and clearly describe the problem you are going to solve.
+
+2. What’s the vision?
+Concisely describe how the proposed software system will solve the
+problem shared by answering the first question. Rasmusson recommends
+creating an elevator pitch for this slide. There are many resources on this
+topic available on the web.
+
+3. What’s the value?
+List the business goals for the project. See Discover the Business Goals,
+on page 43 for ideas and hints.
+
+4. What’s in scope?
+List the highest-priority functional requirements that are known to cur
+rently be in scope. Usually these will be the must haves. Also list features
+that are definitely out of scope as well as functionality with potential
+architectural significance whose scope is still to be determined.
+
+5. Who are the key stakeholders?
+List the key stakeholders and their primary concerns.
+
+6. What does the basic solution look like?
+Share a sketch of the notional architecture. This can be an informal dia
+gram such as Let Ideas Breathe with a Cartoon, on page 134.
+
+7. What are the key risks? (Why might this project fail?)
+List the current top risks in the project. Review what makes a good risk
+statement in Identify Conditions and Consequences, on page 33.
+
+8. How much work? What are the costs?
+Using what you know about the scope and notional architecture, estimate
+the approximate effort and costs to complete the known work. List any
+assumptions you make about the team size and skill sets.
+
+9. What are the expectations for trade-offs?
+Have a frank discussion about key trade-offs before difficult decisions
+need to be made. Talk about the Big Four: scope, cost, schedule, and
+quality. Also discuss any interesting or high-priority quality attributes,
+especially if they may be in tension. Use Activity 1, Choose One Thing, on
+page 192
+
+10. When will it be ready?
+Provide stakeholders with an idea for how long it takes to deliver the
+software. This estimate is your opportunity to start a conversation about
+key milestones. Create a draft time line or project schedule for the known
+work. The schedule is not expected to be perfect and should change as
+the project evolves.
+
+Once the inception deck is completed, review it with stakeholders and make
+adjustments based on feedback.
+
+Guidelines and Hints
+• Use the ten questions as a checklist for kicking off a software project.
+• Periodically review the inception deck as a reminder for what’s important
+in the project.
+• Slides are not required! The important thing is to answer the questions.
+Markdown also works well for the inception deck.
+• The effort that goes into creating the Inception Deck should be commiser
+ate with size and cost of the project. For example, don’t spend a week
+creating an inception deck for a two-week project. At the same time, a
+week might not be enough time to complete an inception deck for a huge,
+multiteam project.
+Example
+Jonathan Rasmusson has shared an excellent example on his website:
+
+https://agilewarrior.wordpress.com/2010/11/06/the-agile-inception-deck/ " (Keeling, 269-271)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
+
