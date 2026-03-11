@@ -1,0 +1,107 @@
+"Capture architecture design decisions as they are made using a lightweight, 
+text-based template. Lightweight decision records are a developer-friendly 
+approach to a time-tested architecture practice. Documenting design decisions 
+makes it easier to share and analyze them. Retaining a history of decisions 
+provides context for the current architecture relative to its evolution. 
+
+Benefits 
++Make recording design decisions a team responsibility. 
++Keep key decisions close to the code by storing them in the code repository. 
++Combine with other artifacts to create a holistic description strategy. 
++Capture history to gain perspective on the evolution of the design. 
++Involve the whole team in the design process. 
++Train teammates in architectural thinking by providing ADR templates. 
++Enable peer review of design decisions using standard development tools 
+and an existing peer review workflow. 
+
+Description 
+Write down key architecture design decisions along with the context and 
+implications of the decision. Each decision record should describe a single 
+decision. What makes a decision architectural and not simply detailed design 
+varies from system to system and team to team. Here are some ideas that 
+may indicate you are dealing with an architectural decision. 
+
++The decision directly affects another component or team. 
++The decision changes how the system influences one or more quality 
+attributes, for better or for worse. 
++The decision was precipitated by a business or technical constraint. 
++The decision has a far-reaching, significant impact such as a framework 
+or technology choice. 
++The decision fundamentally changes the way the team develops or ships 
+the system. 
+
+Here is a sample ADR template: 
+
+Title Include the ADR number and a descriptive title. 
+
+Context Explain the circumstances under which the decision was made. 
+This should be a series of simple, factual statements. Describe relevant 
+architecture influencers such as technology, skills, previous decisions, 
+and the business or political climate among others. 
+
+Decision Describe the decision you made. 
+
+Status Draft, Proposed, Accepted, Superseded, or Deprecated
+
+Consequences Describe how your decision will or has changed the circum- 
+stances of the system, stakeholders, and team. Both positive and nega- 
+tive consequences should be included. Update this section as conse- 
+quences emerge and are understood. 
+
+Guidelines and Hints 
+
++Include only one decision per file. 
++Sequentially number ADRs and keep old records. Add references to old 
+records when a decision is superseded or changed. 
++Keep ADRs short, one or two pages at most. 
++Use plain language when recording decisions. 
++Put architecture decisions through the same review process as code. 
++Store in version control with other code artifacts. 
++ADRs should not be the only architecture documentation you create. 
++Combine with other artifacts such as views, architecture haikus, and 
+system metaphors. 
+
+Example 
+Here is an example ADR for Project Lionheart, recorded in markdown syntax: 
+# ADR 7: Public GitHub 
+and Travis Cl 
+Id 
+## Status: Proposed 
+We will use GitHub and Travis as our version control and continuous inte- 
+gration systems. All team collaboration will be conducted openly using 
+GitHub systems. 
+
+## Context 
+The City requires all code to be released as open source. Travis CI is free 
+for open source. Social coding practices are expected to assist in community 
+building. Our team is familiar with GitHub workflow and tools. 
+
+## Consequences 
+Positive 
+*Everyone is able to read and edit code and documents (plain text). 
+
+Negatives 
+*Collaboration with City officials is decreased as they become comfortable 
+with new tools. 
+* While ADRs as markdown are great, creating and storing diagrams is still 
+a problem.
+
+The form of decision records discussed here was proposed by Michael Nygard.’" (Keeling, 260-262)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
+
+
+Many templates for recording architecture design decisions have been proposed 
+over the years. Jeff Tyree and Art Akerman in "Architecture Decisions: 
+Demystifying Architecture" [TAO05] emphasize traceability to the issues that the 
+decision addresses. Uwe Van Heesch, Paris Avgerioum, and Rich Hilliard in 
+"A documentation framework for architecture decisions" [VAH12] show how 
+decision templates can be used within the context of the IEEE 42010 standard. 
+
+https://adr.github.io/
+https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+
+Michael Keeling and Joe Runde. Architecture Decision Records in Action. SATURN 2017.
+https://www.sei.cmu.edu/library/saturn-2017-presentations/
+
+https://www.youtube.com/watch?v=41NVge3_cYo
