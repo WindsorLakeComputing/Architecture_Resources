@@ -1,0 +1,71 @@
+"Develop or use software so you can test a hypothesis, learn information
+needed to make a design decision, prove a quality attribute, or gain experience.
+Sometimes the only way to learn what you need to know is to do it yourself.
+This adage is especially true of technology and frameworks.
+
+We prototype to learn when we need to figure out how to do something or how
+something works. We prototype to decide when we need to gather information
+that will help us choose between multiple options.
+
+Building a prototype to decide is like running an experiment. The technology
+or pattern under investigation is hypothesized to solve a specific design
+problem. The purpose of the prototype is to test the hypothesis.
+
+Benefits
+• Gather information through firsthand experience.
+• Generate data to use in decision making.
+• Allow stakeholders to experience a part of the system.
+• Learn how something works quickly and inexpensively.
+
+Description
+The difference between a useless prototype and overdoing it is a razor-thin
+line. To increase your chances of success when prototyping, you need a plan.
+Let’s look at what is involved in creating a prototyping plan.
+
+1. Define the learning objectives and scope for the prototype. What questions
+will this prototype help you answer?
+
+2. Decide on the prototype’s budget and establish a delivery time line. When
+will you pull the plug on the prototype? How much are you willing to
+spend to meet the learning objectives? Limit costs and time as much as
+possible.
+
+3. Decide how the outcomes will be delivered. Who is the audience for the
+prototype and how will you share it? For example, will you share a demo,
+whitepaper, presentation, or something else?
+
+The goal is always to implement the prototype as quickly and cheaply as
+possible. As the prototype comes together, review the implementation relative
+to the plan. Once you’ve achieved the objectives, the prototype is complete
+and it’s time to share the outcomes.
+
+After the prototype is complete, perform the minimum clean-up necessary
+so it can be used again if required. Archive code and instructions for future
+reference.
+
+Guidelines and Hints
+• Look for ways to meet your learning objectives without writing software.
+• Decide up front whether the prototype is evolutionary or throw-away.
+• Keep tabs on the prototype implementers. Prototyping often requires that
+you trade quality for speed of delivery and completeness. This is a chal
+lenge for many developers who are proud of their craft.
+• Time-box the prototype aggressively, but allow sufficient time to complete
+the work.
+• Sketch out a high-level design for the prototype with the implementers
+before starting development.
+
+Example
+Here’s an example of prototyping to learn. The team needed to understand
+the performance limitations of specific Apache Solr APIs. To learn this, a
+single developer over the course of one week developed a simple test driver
+using Apache JMeter,8 ran several load tests, collected data, and wrote a two
+page report summarizing the findings. Using Apache JMeter let the team
+quickly gather data with minimal effort.
+
+Here’s an example of prototyping to choose. The team needed to select a
+server-side web framework. To help them decide, the team implemented a
+simple blog application using the top two frameworks. The activity was time
+boxed to two days. At the end of the second day, the team discussed pros and
+cons of each framework based on their experiences and chose a framework." (Keeling, 276-277)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
