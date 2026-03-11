@@ -1,0 +1,67 @@
+"Dynamic structures are difficult to appreciate on paper. Use a sequence dia
+gram to show how control or data moves through the system at runtime.
+Model the flow of logic, data, or control among components.
+
+Benefits
+• Simple and flexible notation
+• Both graphical and text notations exist
+• Useful for communication and reasoning
+• Ample tool support, though tools are not required
+
+Description
+1. Choose a scenario to diagram. Use this as the title of the diagram.
+2. List components involved in the scenario horizontally across the top of
+the page. These are the participants in the diagram. Draw a straight, ver
+tical life line under each participant. Participants are usually listed from
+left to right starting with the participant that initiates the scenario.
+3. Draw arrows from one participant’s life line to another to indicate commu
+nication between those components. Label the line to describe the message.
+4. Time goes down the y-axis in the diagram. Since the next message happens
+after the first, it should be further down the y-axis.
+
+[sequence diagram]
+
+Guidelines and Hints
+• Reason about distributed systems, microservices, object communication,
+and other dynamic structures.
+• Informal notations are fine as long as you are consistent.
+• A closed arrow with a solid line indicates a synchronous request message.
+• An open arrow with a solid line indicates an asynchronous request message.
+• An arrow with a dotted line indicates a response message.
+• Use a tool that renders text-based notations so you can store the diagrams
+with your code.
+
+Example
+Here is a sequence diagram for a set of microservices responsible for saving
+an item to a shopping cart, generated using js-sequence-diagrams.
+
+[sequence diagram]
+
+This is the text notation used to generate the diagram:
+
+Title: Save an Item to a Shopping Cart
+Front End Gatekeeper-> Sessions: Verify Session
+Sessions--> Front End Gatekeeper: Session ID
+Front End Gatekeeper-> Shopping Cart REST:
+POST /sessions/{session_id}/items/{item_id}
+Shopping Cart REST-> Shopping Cart Store:
+SaveItem(session_id,\n item_id)
+Shopping Cart Store-> Database: Add Item
+Database--> Shopping Cart Store: Added!
+Shopping Cart Store--> Shopping Cart REST: OK, echo cart
+Shopping Cart REST--> Front End Gatekeeper: OK, cart as JSON
+
+
+With the sequence diagram drawn, it’s easy to see a potential flaw in the
+design. The first step of verifying the session creates an opportunity to validate
+a session that could be closed—for example, if the user checks out before the
+item is added. This API call by the Gatekeeper is redundant at best. More
+likely the diagram has exposed an inappropriate assumption about the state
+of the user’s session when saving an item in the Shopping Cart Store service." (Keeling, 278-280)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
+
+
+
+https://github.com/bramp/js-sequence-diagrams
+
