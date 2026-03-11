@@ -1,0 +1,83 @@
+"Create a list of the architectural decisions you discarded with a brief note
+explaining why you ultimately rejected each decision. Recording the decisions
+you discarded, the paths not taken, provides context and rationale for a design
+decision.
+
+Benefits
+• Help downstream designers replay the thought process that went into the
+current design.
+• Head off did you consider...? discussions with stakeholders.
+• Provide an additional layer of rationale for design decisions.
+
+Description
+List design decisions you considered but rejected along with the reason for
+why the decision was not selected. The list can be stored in plain text or
+other easily accessible format.
+
+Guidelines and Hints
+• Focus on a single view or design decision. The list should not attempt to
+encompass all design decisions.
+• Keep it brief. Include only enough detail so that stakeholders can under
+stand the decision and why it was rejected.
+• Combine with other methods to create a more complete description of the
+architecture. You can list the paths not taken alongside Architecture
+Decision Records on page 260 and architecture haikus on page 263.
+
+Example
+Here is an example of paths not taken for a hybrid cloud project in which an
+on-premise, shrink-wrapped software system was required to integrate with
+a rapidly evolving cloud platform on a continuous delivery schedule. The
+shrink-wrapped software was released quarterly. The scope of the decision
+centered on the integration between the two platforms.
+
+Path Not Taken
+Why the Path Was Rejected
+
+Create a cloud-based
+“services adapter”
+to buffer against
+changes in third
+party services
+---------------------------------------------
+Heavy maintenance costs, benefits in features and
+quality attributes not required for MVP release, costs
+outweigh benefits
+
+Release adapter as
+open source, have
+customers load it
+themselves
+--------------------------------------------------
+Extra steps to deployment inhibits adoption, concern
+that unmodified defaults could introduces security
+risks, concerns about training customers and con
+sultants, does not reduce maintenance costs
+
+Offer a client-side library
+-------------------------------------------
+The client library will likely always be out of date
+(services ship continuously, shrink-wrap software
+ships once per quarter). Customers must learn both
+cloud services and how to use the client library.
+Documentation costs are highest. There is high risk
+the software will not be ready by the deadline.
+
+No new support for
+web services integra
+tion in the client
+software
+-----------------------------------------------------
+Does not improve the user experience, customers
+require guidance with emerging patterns and
+paradigms
+
+
+
+The final decision was to release sample code for high-priority use cases in
+the documentation. The team was not responsible for maintaining the sample
+code. Customers were on their own if they chose to use or extend the sample
+code. Stakeholders felt this struck the right balance between costs and value.
+This minimally viable release allowed the product manager to collect data on
+the usefulness of the integration before investing further into the architecture."(Keeling, 274-275)
+
+REFERENCE: Keeling, Michael. Design It! From Programmer to Software Architect. The Pragmatic Bookshelf, 2017.
