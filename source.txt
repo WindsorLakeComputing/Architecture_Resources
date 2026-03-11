@@ -27,3 +27,6 @@ Design hills describe the impact stakeholders hope the software will have on
 end users. Like other ways of specifying business goals, hills try to describe 
 the value the software provides, not how the software is to be built:
 https://web.archive.org/web/20160123222757/http://www.ibm.com/design/thinking/keys/hills/
+
+If the participants are distributed, consider using a tool such as Mural:
+https://www.mural.co/
